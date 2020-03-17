@@ -733,7 +733,7 @@
 						<textElement verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{CashValue}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{gross}]]></textFieldExpression>
 					</textField>
 					<staticText>
 						<reportElement x="250" y="0" width="120" height="30" forecolor="#FFFFFF" uuid="06b01dac-4815-48d4-890b-ff759faa7e1d"/>
