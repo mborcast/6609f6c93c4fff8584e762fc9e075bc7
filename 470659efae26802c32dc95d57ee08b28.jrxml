@@ -692,9 +692,9 @@
 				</textField>
 			</frame>
 		</band>
-		<band height="79">
+		<band height="99">
 			<staticText>
-				<reportElement x="0" y="10" width="751" height="69" uuid="c97a84c7-f43f-41e6-9d24-24d175c050bc"/>
+				<reportElement x="0" y="10" width="751" height="89" uuid="c97a84c7-f43f-41e6-9d24-24d175c050bc"/>
 				<text><![CDATA[Savenest de México, S.A. de C.V. Asesor en Inversiones Independiente con número de folio de inscripción en el registro de Asesores en Inversiones asignado por la Comisión Nacional Bancaria y de Valores 30120-001-(14828)-31/10/2018 hace de su conocimiento que la Comisión Nacional Bancaria y de Valores supervisa exclusivamente la prestación de servicios de administración de cartera de valores cuando se tomen decisiones de inversión a nombre y por cuenta de terceros, así como los servicios consistentes en otorgar asesoría de inversión en Valores, análisis y emisión de recomendaciones de inversión de manera individualizada, por lo que carece de atribuciones para supervisar o regular cualquier otro servicio que proporcione Savenest.]]></text>
 			</staticText>
 		</band>
