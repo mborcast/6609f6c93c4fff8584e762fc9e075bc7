@@ -1434,7 +1434,7 @@
 			</componentElement>
 		</band>
 		<band height="35">
-			<printWhenExpression><![CDATA[LEN($F{unliquidated})  != 2]]></printWhenExpression>
+			<printWhenExpression><![CDATA[$F{unliquidated}.length() != 2]]></printWhenExpression>
 			<break>
 				<reportElement x="0" y="10" width="749" height="1" uuid="29913073-a4ca-437a-9efe-894fc63f7349"/>
 			</break>
