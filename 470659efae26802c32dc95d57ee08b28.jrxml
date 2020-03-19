@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="savenest" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isTitleNewPage="true" uuid="363cc947-4a29-4d21-bc7d-58de713b1ac2">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="reports\manu.xml"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="manu.xml"/>
 	<property name="com.jaspersoft.studio.unit." value="mm"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
@@ -228,6 +228,14 @@
 	<field name="firstDeposit_1" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.portfolio.firstDeposit"/>
 		<fieldDescription><![CDATA[data.portfolio.firstDeposit]]></fieldDescription>
+	</field>
+	<field name="unliquidatedValue" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.balance.unliquidatedAmount.value"/>
+		<fieldDescription><![CDATA[data.balance.unliquidatedAmount.value]]></fieldDescription>
+	</field>
+	<field name="unliquidatedWeight" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.balance.unliquidatedAmount.weight"/>
+		<fieldDescription><![CDATA[data.balance.unliquidatedAmount.weight]]></fieldDescription>
 	</field>
 	<pageHeader>
 		<band height="80" splitType="Stretch">
@@ -647,7 +655,7 @@
 					<textElement verticalAlignment="Middle">
 						<paragraph leftIndent="5"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{CashValue}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{unliquidatedValue}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="626" y="30" width="125" height="30" uuid="103ce86a-7f24-4322-a9f7-d4a78e6a5175"/>
@@ -657,7 +665,7 @@
 					<textElement verticalAlignment="Middle">
 						<paragraph leftIndent="5"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{CashWeight}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{unliquidatedWeight}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="0" y="60" width="501" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="29f1ad5d-6f29-4df8-bbad-c740841e635d"/>
