@@ -344,6 +344,10 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="data.balance.unliquidatedAmount.weight"/>
 		<fieldDescription><![CDATA[data.balance.unliquidatedAmount.weight]]></fieldDescription>
 	</field>
+	<field name="unliquidated" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.unliquidated"/>
+		<fieldDescription><![CDATA[data.unliquidated]]></fieldDescription>
+	</field>
 	<pageHeader>
 		<band height="80" splitType="Stretch">
 			<frame>
@@ -1416,8 +1420,11 @@
 			</componentElement>
 		</band>
 		<band height="11">
+			<printWhenExpression><![CDATA[$F{unliquidated} ==  "[]"]]></printWhenExpression>
 			<break>
-				<reportElement x="0" y="10" width="751" height="1" uuid="29913073-a4ca-437a-9efe-894fc63f7349"/>
+				<reportElement x="0" y="10" width="749" height="1" uuid="29913073-a4ca-437a-9efe-894fc63f7349">
+					<printWhenExpression><![CDATA[($F{unliquidated} == "[]"  ? Boolean.TRUE : Boolean.FALSE )]]></printWhenExpression>
+				</reportElement>
 			</break>
 		</band>
 		<band height="92">
