@@ -432,7 +432,7 @@
 		<fieldDescription><![CDATA[data.unliquidated]]></fieldDescription>
 	</field>
 	<pageHeader>
-		<band height="80" splitType="Stretch">
+		<band height="72" splitType="Stretch">
 			<frame>
 				<reportElement x="0" y="0" width="752" height="64" uuid="5ebb626a-7712-4216-b31d-158f27c61c6d"/>
 				<box>
@@ -582,9 +582,9 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="90" splitType="Stretch">
+		<band height="107" splitType="Stretch">
 			<componentElement>
-				<reportElement x="0" y="0" width="752" height="80" isPrintWhenDetailOverflows="true" uuid="b840a476-fc23-40a0-8f27-bd226ff67b27">
+				<reportElement x="0" y="22" width="752" height="80" isPrintWhenDetailOverflows="true" uuid="b840a476-fc23-40a0-8f27-bd226ff67b27">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -790,10 +790,17 @@
 					</jr:columnGroup>
 				</jr:table>
 			</componentElement>
+			<staticText>
+				<reportElement x="0" y="0" width="292" height="22" uuid="d968fd51-0034-4d10-8127-86cbbdc129e6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Informe de operaciones]]></text>
+			</staticText>
 		</band>
-		<band height="70">
+		<band height="81">
 			<componentElement>
-				<reportElement x="0" y="-10" width="752" height="80" uuid="fc822e87-76df-4f9b-8599-5cf76f0795e3">
+				<reportElement x="0" y="1" width="752" height="80" uuid="fc822e87-76df-4f9b-8599-5cf76f0795e3">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 4_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 4_CH"/>
