@@ -619,7 +619,8 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="c2af6362-0b3e-48e5-8e41-b01fa585b58e">
 										<property name="com.jaspersoft.studio.unit.width" value="mm"/>
 									</reportElement>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
 									<text><![CDATA[Emisora]]></text>
@@ -643,7 +644,8 @@
 							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
 								<staticText>
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="dab6b9ca-7168-4625-974f-91e39b03a23c"/>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
 									<text><![CDATA[Serie]]></text>
@@ -667,7 +669,8 @@
 							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
 								<staticText>
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="2e96eeca-75d4-4f26-b336-60edfb838faa"/>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
 									<text><![CDATA[Titulos]]></text>
@@ -678,9 +681,9 @@
 									<reportElement x="0" y="0" width="94" height="20" uuid="6936e40a-3f42-4102-b49f-0f8c71dde88e">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font size="7"/>
-										<paragraph leftIndent="5"/>
+										<paragraph leftIndent="5" rightIndent="5"/>
 									</textElement>
 									<textFieldExpression><![CDATA[$F{units}]]></textFieldExpression>
 								</textField>
@@ -691,20 +694,32 @@
 							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
 								<staticText>
 									<reportElement x="0" y="0" width="188" height="30" forecolor="#FFFFFF" uuid="35cc8354-a15a-4110-a928-696aaa0bfee6"/>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
 									<text><![CDATA[Precio]]></text>
 								</staticText>
 							</jr:columnHeader>
 							<jr:detailCell style="Table_TD" height="20">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 								<textField>
-									<reportElement x="0" y="0" width="188" height="20" uuid="74442b4c-21ad-4836-989a-2da12959afd4">
+									<reportElement x="0" y="0" width="40" height="20" uuid="74442b4c-21ad-4836-989a-2da12959afd4">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Left" verticalAlignment="Middle">
 										<font size="7"/>
-										<paragraph leftIndent="5"/>
+										<paragraph leftIndent="5" rightIndent="5"/>
+									</textElement>
+									<textFieldExpression><![CDATA["$"]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="40" y="0" width="148" height="20" uuid="a012ef14-0af2-4df8-aeac-94a7ce846b2f">
+										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
+									</reportElement>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font size="7"/>
+										<paragraph leftIndent="5" rightIndent="5"/>
 									</textElement>
 									<textFieldExpression><![CDATA[$F{close}]]></textFieldExpression>
 								</textField>
@@ -715,20 +730,32 @@
 							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
 								<staticText>
 									<reportElement x="0" y="0" width="188" height="30" forecolor="#FFFFFF" uuid="2c92d761-0427-4d0a-a2b6-00cb61aa8f99"/>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
 									<text><![CDATA[Valor de mercado]]></text>
 								</staticText>
 							</jr:columnHeader>
 							<jr:detailCell style="Table_TD" height="20">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 								<textField>
-									<reportElement x="0" y="0" width="188" height="20" uuid="fa3a7d01-42c5-48c2-b3a0-ae97a043836e">
+									<reportElement x="0" y="0" width="40" height="20" uuid="fa3a7d01-42c5-48c2-b3a0-ae97a043836e">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Left" verticalAlignment="Middle">
 										<font size="7"/>
-										<paragraph leftIndent="5"/>
+										<paragraph leftIndent="5" rightIndent="5"/>
+									</textElement>
+									<textFieldExpression><![CDATA["$"]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="40" y="0" width="148" height="20" uuid="40de4b3f-2d85-4f7a-9188-1f40859f9160">
+										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
+									</reportElement>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font size="7"/>
+										<paragraph leftIndent="5" rightIndent="5"/>
 									</textElement>
 									<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
 								</textField>
@@ -739,22 +766,24 @@
 							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
 								<staticText>
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="4699dfd7-74d4-4b0a-aeca-7838b39a56f3"/>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
 									<text><![CDATA[%]]></text>
 								</staticText>
 							</jr:columnHeader>
 							<jr:detailCell style="Table_TD" height="20">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
 								<textField>
 									<reportElement x="0" y="0" width="94" height="20" uuid="2882bc68-c330-43d8-84cd-a361524e7488">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
-									<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[$F{weight}+"%"]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -802,7 +831,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="fb5eca4d-e33e-4210-8038-bd0bf91d2833">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -829,7 +858,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="496048eb-56bc-4f74-9b0a-9227d31add2a">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -841,7 +870,7 @@
 									<reportElement x="0" y="0" width="94" height="30" uuid="d0b8b786-4143-470f-8bc4-982deb0a0c44">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="2"/>
 									</textElement>
@@ -856,7 +885,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="190026b7-32f9-4c3b-a5d6-2bd646de9b4e">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -868,7 +897,7 @@
 									<reportElement x="0" y="0" width="94" height="30" uuid="4e1ab5e2-92f7-463e-a0fe-01e796b9d33b">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="2"/>
 									</textElement>
@@ -883,7 +912,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="88177c6a-f1a0-41cf-bc2e-aad3df346a87">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -891,15 +920,26 @@
 								</staticText>
 							</jr:columnHeader>
 							<jr:detailCell style="Table 4_TD" height="30">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 								<textField>
-									<reportElement x="0" y="0" width="94" height="30" uuid="a02d08e8-024a-4a5c-bc15-153bee6a1f4f">
+									<reportElement x="18" y="0" width="75" height="30" uuid="a02d08e8-024a-4a5c-bc15-153bee6a1f4f">
+										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
+									</reportElement>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font size="7"/>
+										<paragraph leftIndent="2"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="0" y="0" width="18" height="30" uuid="97b94f53-3811-4f0f-8b5e-4df8fcbe3349">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
 									<textElement textAlignment="Left" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="2"/>
 									</textElement>
-									<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+									<textFieldExpression><![CDATA["$"]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -910,7 +950,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="32857ac7-32e1-467b-908a-24bef479ece9">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -922,7 +962,7 @@
 									<reportElement x="0" y="0" width="94" height="30" uuid="1cbf443a-4799-445c-830b-41b96181d480">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="2"/>
 									</textElement>
@@ -937,7 +977,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="c2a538f4-0c30-4dec-b5b1-720183c9d94f">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -947,11 +987,11 @@
 							<jr:detailCell style="Table 4_TD" height="30">
 								<textField>
 									<reportElement x="0" y="0" width="94" height="30" uuid="9ef4d55c-8552-4fa8-b447-ec85d9385c51"/>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Right" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="2"/>
 									</textElement>
-									<textFieldExpression><![CDATA[$F{returnRate}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[$F{returnRate}+"%"]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -962,7 +1002,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="7b3102fa-fe83-4b2f-b741-923b1e923501">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -970,15 +1010,26 @@
 								</staticText>
 							</jr:columnHeader>
 							<jr:detailCell style="Table 4_TD" height="30">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 								<textField>
-									<reportElement x="0" y="0" width="94" height="30" uuid="39e495f7-c731-4f37-9de5-f508356363f4">
+									<reportElement x="18" y="0" width="76" height="30" uuid="39e495f7-c731-4f37-9de5-f508356363f4">
+										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
+									</reportElement>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font size="7"/>
+										<paragraph leftIndent="2"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="0" y="0" width="18" height="30" uuid="a54fe133-d074-4e64-92dc-d144c08edb22">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
 									<textElement textAlignment="Left" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="2"/>
 									</textElement>
-									<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+									<textFieldExpression><![CDATA["$"]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -989,7 +1040,7 @@
 									<reportElement x="0" y="0" width="94" height="30" forecolor="#FFFFFF" uuid="f7ac2e7d-2b63-41f3-bf3c-dcda97e8185f">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="8"/>
 										<paragraph leftIndent="5"/>
 									</textElement>
@@ -1001,11 +1052,11 @@
 									<reportElement x="0" y="0" width="94" height="30" uuid="e2bc0b24-adcc-42f3-a9ce-ed54e0e0c691">
 										<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 									</reportElement>
-									<textElement textAlignment="Left" verticalAlignment="Middle">
+									<textElement textAlignment="Center" verticalAlignment="Middle">
 										<font size="7"/>
 										<paragraph leftIndent="2"/>
 									</textElement>
-									<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+									<textFieldExpression><![CDATA[$F{weight}+"%"]]></textFieldExpression>
 								</textField>
 							</jr:detailCell>
 						</jr:column>
@@ -1017,29 +1068,29 @@
 			<frame>
 				<reportElement x="0" y="7" width="751" height="90" uuid="b1a14b34-c98a-426a-83db-108ef402e355"/>
 				<textField>
-					<reportElement x="501" y="0" width="125" height="30" uuid="f3150c23-a21a-4f85-afcf-a085062085a9"/>
+					<reportElement x="582" y="0" width="76" height="30" uuid="f3150c23-a21a-4f85-afcf-a085062085a9"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
-					<textElement verticalAlignment="Middle">
+					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font size="7"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{CashValue}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="626" y="0" width="125" height="30" uuid="ab84297f-8ffc-42e7-9cfb-e277b7c67a38"/>
+					<reportElement x="658" y="0" width="93" height="30" uuid="ab84297f-8ffc-42e7-9cfb-e277b7c67a38"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
-					<textElement verticalAlignment="Middle">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font size="7"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{CashWeight}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{CashWeight}+"%"]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="0" y="0" width="501" height="30" uuid="0a324f48-c2ba-4e4b-9fd1-336790d1b25e"/>
+					<reportElement x="0" y="0" width="564" height="30" uuid="0a324f48-c2ba-4e4b-9fd1-336790d1b25e"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1050,7 +1101,7 @@
 					<text><![CDATA[Efectivo]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="0" y="30" width="501" height="30" uuid="ecec3357-bc14-43e6-89a4-5961ad198b56"/>
+					<reportElement x="0" y="30" width="564" height="30" uuid="ecec3357-bc14-43e6-89a4-5961ad198b56"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1061,59 +1112,104 @@
 					<text><![CDATA[Operaciones pendientes por liquidar]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="501" y="30" width="125" height="30" uuid="ec6d01c4-0cf7-4f01-a81f-556764271ad0"/>
+					<reportElement x="582" y="30" width="76" height="30" uuid="ec6d01c4-0cf7-4f01-a81f-556764271ad0"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
-					<textElement verticalAlignment="Middle">
+					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font size="7"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{unliquidatedValue}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="626" y="30" width="125" height="30" uuid="103ce86a-7f24-4322-a9f7-d4a78e6a5175"/>
+					<reportElement x="658" y="30" width="93" height="30" uuid="103ce86a-7f24-4322-a9f7-d4a78e6a5175"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
-					<textElement verticalAlignment="Middle">
+					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font size="7"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{unliquidatedWeight}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{unliquidatedWeight}+"%"]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="60" width="501" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="29f1ad5d-6f29-4df8-bbad-c740841e635d"/>
+					<reportElement mode="Opaque" x="0" y="60" width="564" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="29f1ad5d-6f29-4df8-bbad-c740841e635d"/>
 					<box>
-						<bottomPen lineWidth="1.0"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle">
-						<font isBold="true"/>
+						<font size="7" isBold="true"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
 					<text><![CDATA[Total ]]></text>
 				</staticText>
 				<textField>
-					<reportElement mode="Opaque" x="501" y="60" width="125" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="05140c4c-bca5-4741-ab42-fa2accda9a8b"/>
+					<reportElement mode="Opaque" x="582" y="60" width="76" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="05140c4c-bca5-4741-ab42-fa2accda9a8b"/>
 					<box>
-						<bottomPen lineWidth="1.0"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
-					<textElement verticalAlignment="Middle">
-						<font size="10"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="7"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{totalValue}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="626" y="60" width="125" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="c841153a-da3d-4505-b167-6b1a7686fddc"/>
+					<reportElement mode="Opaque" x="658" y="60" width="93" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="c841153a-da3d-4505-b167-6b1a7686fddc"/>
 					<box>
-						<bottomPen lineWidth="1.0"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle">
 						<font size="7"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
 					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="564" y="0" width="18" height="30" uuid="df2740e9-3673-4ee8-89e8-79bcbb39d892"/>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="7"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="564" y="30" width="18" height="30" uuid="56a72415-05f7-48b6-9b1d-954537bb5c2c"/>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="7"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="564" y="60" width="18" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="2c09a7d5-acbe-4cb4-9be2-33684661cb70"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="7"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
 				</textField>
 			</frame>
 		</band>
@@ -1155,17 +1251,17 @@
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{gross}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{gross}+"%"]]></textFieldExpression>
 					</textField>
 					<staticText>
 						<reportElement x="250" y="0" width="120" height="30" forecolor="#FFFFFF" uuid="06b01dac-4815-48d4-890b-ff759faa7e1d"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
@@ -1187,10 +1283,10 @@
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{net}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{net}+"%"]]></textFieldExpression>
 					</textField>
 					<staticText>
 						<reportElement x="0" y="90" width="370" height="30" uuid="1c117a3b-0a5a-419e-bb56-df7ea12d40df"/>
@@ -1228,7 +1324,7 @@
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
@@ -1239,7 +1335,7 @@
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
 						<text><![CDATA[Monto]]></text>
@@ -1260,10 +1356,10 @@
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{intermediacion}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$"+$F{intermediacion}]]></textFieldExpression>
 					</textField>
 					<staticText>
 						<reportElement x="0" y="60" width="250" height="30" uuid="d7a0561c-83d8-4d29-b533-1b3f6a7180b1"/>
@@ -1281,10 +1377,10 @@
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{service}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$"+$F{service}]]></textFieldExpression>
 					</textField>
 					<staticText>
 						<reportElement x="0" y="90" width="250" height="30" uuid="6fb86842-88d6-4dd8-9ec4-e2ebc3ed22a7"/>
@@ -1313,20 +1409,20 @@
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{isr}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$"+$F{isr}]]></textFieldExpression>
 					</textField>
 					<textField>
 						<reportElement x="250" y="90" width="120" height="30" uuid="a5c8d7ea-adca-4620-8726-236c884a250a"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement verticalAlignment="Middle">
+						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{admin}]]></textFieldExpression>
+						<textFieldExpression><![CDATA["$"+$F{admin}]]></textFieldExpression>
 					</textField>
 				</frame>
 				<textField>
