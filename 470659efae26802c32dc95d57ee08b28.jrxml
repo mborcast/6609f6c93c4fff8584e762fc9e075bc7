@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<!-- Created with Jaspersoft Studio version 6.12.0.final using JasperReports Library version 6.12.1-ac0eebdb29e4c0985457bab279a6db744d661530  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="savenest" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isTitleNewPage="true" uuid="363cc947-4a29-4d21-bc7d-58de713b1ac2">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="manu.xml"/>
 	<property name="com.jaspersoft.studio.unit." value="mm"/>
@@ -1325,7 +1325,7 @@
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="382" y="0" width="370" height="172" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
+					<reportElement x="382" y="0" width="370" height="151" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
 					<staticText>
 						<reportElement mode="Opaque" x="0" y="0" width="370" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="ea821290-2af3-4a43-81bc-6738d9efb24a"/>
 						<box>
@@ -1472,6 +1472,20 @@
 					</textElement>
 					<textFieldExpression><![CDATA["El presente informe de operaciones comprende los movimientos del " +$F{start} +" al "+ $F{end}]]></textFieldExpression>
 				</textField>
+				<staticText>
+					<reportElement x="381" y="156" width="371" height="20" forecolor="#030303" uuid="9073bbf7-1d60-48e4-8c3b-26d7f828ca8b"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Top">
+						<font size="8" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[*Cobrado y/o Retenido por la Institución financiera no por SaveNest]]></text>
+				</staticText>
 			</frame>
 		</band>
 		<band height="1">
