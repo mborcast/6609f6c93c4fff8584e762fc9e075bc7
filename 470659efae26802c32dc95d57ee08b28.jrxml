@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.12.0.final using JasperReports Library version 6.12.1-ac0eebdb29e4c0985457bab279a6db744d661530  -->
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="savenest" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isTitleNewPage="true" uuid="363cc947-4a29-4d21-bc7d-58de713b1ac2">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="manu.xml"/>
 	<property name="com.jaspersoft.studio.unit." value="mm"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
@@ -11,6 +10,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="mm"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="mm"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
 	<style name="Style1"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
 		<box>
@@ -430,6 +430,14 @@
 	<field name="unliquidated" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.unliquidated"/>
 		<fieldDescription><![CDATA[data.unliquidated]]></fieldDescription>
+	</field>
+	<field name="net12M" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.returnRates.net12M"/>
+		<fieldDescription><![CDATA[data.returnRates.net12M]]></fieldDescription>
+	</field>
+	<field name="gross12M" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.returnRates.gross12M"/>
+		<fieldDescription><![CDATA[data.returnRates.gross12M]]></fieldDescription>
 	</field>
 	<pageHeader>
 		<band height="72" splitType="Stretch">
@@ -1243,7 +1251,7 @@
 						<text><![CDATA[]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="0" y="30" width="250" height="30" uuid="556d39cc-cca3-490f-a69a-d82c5c69b6a0"/>
+						<reportElement x="0" y="30" width="170" height="30" uuid="556d39cc-cca3-490f-a69a-d82c5c69b6a0"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1254,17 +1262,17 @@
 						<text><![CDATA[Tasa de rendimiento bruto ]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="250" y="30" width="120" height="30" uuid="78ef2bac-6463-4168-9817-5363c709f5b1"/>
+						<reportElement x="270" y="30" width="100" height="30" uuid="78ef2bac-6463-4168-9817-5363c709f5b1"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
 						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{gross}+"%"]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{gross12M}+"%"]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement x="250" y="0" width="120" height="30" forecolor="#FFFFFF" uuid="06b01dac-4815-48d4-890b-ff759faa7e1d"/>
+						<reportElement x="270" y="0" width="100" height="30" forecolor="#FFFFFF" uuid="06b01dac-4815-48d4-890b-ff759faa7e1d"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1272,10 +1280,10 @@
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[%]]></text>
+						<text><![CDATA[12 meses]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="0" y="60" width="250" height="30" uuid="6258e56a-2565-4d7a-bdb1-8f884366a643"/>
+						<reportElement x="0" y="60" width="170" height="30" uuid="6258e56a-2565-4d7a-bdb1-8f884366a643"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1286,14 +1294,14 @@
 						<text><![CDATA[Tasa de rendimiento neto ]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="250" y="60" width="120" height="30" uuid="4e6417f7-8434-4115-aeec-6f1683cd8029"/>
+						<reportElement x="270" y="60" width="100" height="30" uuid="4e6417f7-8434-4115-aeec-6f1683cd8029"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
 						<textElement textAlignment="Center" verticalAlignment="Middle">
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{net}+"%"]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{net12M}+"%"]]></textFieldExpression>
 					</textField>
 					<staticText>
 						<reportElement x="0" y="90" width="370" height="30" uuid="1c117a3b-0a5a-419e-bb56-df7ea12d40df"/>
@@ -1323,6 +1331,37 @@
 						</textElement>
 						<text><![CDATA[*Rendimiento en pesos]]></text>
 					</staticText>
+					<staticText>
+						<reportElement x="170" y="0" width="100" height="30" forecolor="#FFFFFF" uuid="4bee9843-c38c-483d-b19e-2177e9b286fa"/>
+						<box>
+							<bottomPen lineWidth="1.0"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font isBold="true"/>
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<text><![CDATA[2020]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="170" y="30" width="100" height="30" uuid="84cd51ec-caae-433c-9b58-5b4c5b7bf1ca"/>
+						<box>
+							<bottomPen lineWidth="1.0"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{gross}+"%"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="170" y="60" width="100" height="30" uuid="1ced3b7a-eca3-4cd7-98a2-ed66c2bbb5dc"/>
+						<box>
+							<bottomPen lineWidth="1.0"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{net}+"%"]]></textFieldExpression>
+					</textField>
 				</frame>
 				<frame>
 					<reportElement x="382" y="0" width="370" height="151" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
