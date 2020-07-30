@@ -1238,7 +1238,7 @@
 			<frame>
 				<reportElement x="0" y="16" width="752" height="205" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
 				<frame>
-					<reportElement x="0" y="0" width="370" height="140" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
+					<reportElement x="0" y="0" width="370" height="151" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
 					<staticText>
 						<reportElement mode="Opaque" x="0" y="0" width="370" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="5f8c1e35-dd33-406a-94e7-dceff897de7d"/>
 						<box>
@@ -1304,7 +1304,7 @@
 						<textFieldExpression><![CDATA[$F{net12M}+"%"]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement x="0" y="90" width="370" height="30" uuid="1c117a3b-0a5a-419e-bb56-df7ea12d40df"/>
+						<reportElement x="0" y="90" width="370" height="16" uuid="1c117a3b-0a5a-419e-bb56-df7ea12d40df"/>
 						<box>
 							<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 							<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1315,17 +1315,17 @@
 							<font isBold="false"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[*Tasa de rendimiento efectiva acumulada del año en curso]]></text>
+						<text><![CDATA[*Tasa de rendimiento efectiva acumulada del periodo indicado]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="0" y="120" width="370" height="20" uuid="ad9c03ba-8a8b-4f53-91b8-670a0cf7a814"/>
+						<reportElement x="0" y="137" width="370" height="14" uuid="ad9c03ba-8a8b-4f53-91b8-670a0cf7a814"/>
 						<box>
 							<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 							<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 							<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 							<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						</box>
-						<textElement verticalAlignment="Top">
+						<textElement verticalAlignment="Bottom">
 							<font isBold="false"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
@@ -1362,6 +1362,20 @@
 						</textElement>
 						<textFieldExpression><![CDATA[$F{net}+"%"]]></textFieldExpression>
 					</textField>
+					<staticText>
+						<reportElement x="0" y="106" width="370" height="31" uuid="bb2ab8a4-d41f-47ff-8474-8b4c063d4e7c"/>
+						<box>
+							<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement verticalAlignment="Middle">
+							<font isBold="false"/>
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<text><![CDATA[*Para las cuentas con historia menor a 12 meses se indica el rendimiento desde su apertura]]></text>
+					</staticText>
 				</frame>
 				<frame>
 					<reportElement x="382" y="0" width="370" height="151" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
