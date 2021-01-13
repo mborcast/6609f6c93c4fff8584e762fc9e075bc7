@@ -1525,7 +1525,7 @@
 							<font size="8"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA["El monto total de comisiones, gastos, e impuestos (IVA e ISR) del periodo representa el " + $F{totalComisionesSobreTotal} +"% de su cartera de inversión al cierre del mes."]]></textFieldExpression>
+						<textFieldExpression><![CDATA["El monto total de comisiones, gastos, e impuestos (IVA e ISR) del periodo representa el " + $F{totalComisionesSobreTotal} +"% de su cartera de inversión al cierre del periodo."]]></textFieldExpression>
 					</textField>
 				</frame>
 				<textField>
