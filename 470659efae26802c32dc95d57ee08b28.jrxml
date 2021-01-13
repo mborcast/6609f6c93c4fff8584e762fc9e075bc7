@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="savenest" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isTitleNewPage="true" uuid="363cc947-4a29-4d21-bc7d-58de713b1ac2">
 	<property name="com.jaspersoft.studio.unit." value="mm"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
@@ -438,6 +438,14 @@
 	<field name="gross12M" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.returnRates.gross12M"/>
 		<fieldDescription><![CDATA[data.returnRates.gross12M]]></fieldDescription>
+	</field>
+	<field name="totalComisiones" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.concepts.totalComisiones"/>
+		<fieldDescription><![CDATA[data.concepts.totalComisiones]]></fieldDescription>
+	</field>
+	<field name="totalComisionesSobreTotal" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.concepts.totalComisionesSobreTotal"/>
+		<fieldDescription><![CDATA[data.concepts.totalComisionesSobreTotal]]></fieldDescription>
 	</field>
 	<pageHeader>
 		<band height="72" splitType="Stretch">
@@ -1234,11 +1242,11 @@
 				<text><![CDATA[Savenest de México, S.A. de C.V. Asesor en Inversiones Independiente con número de folio de inscripción en el registro de Asesores en Inversiones asignado por la Comisión Nacional Bancaria y de Valores 30120-001-(14828)-31/10/2018 hace de su conocimiento que la Comisión Nacional Bancaria y de Valores supervisa exclusivamente la prestación de servicios de administración de cartera de valores cuando se tomen decisiones de inversión a nombre y por cuenta de terceros, así como los servicios consistentes en otorgar asesoría de inversión en Valores, análisis y emisión de recomendaciones de inversión de manera individualizada, por lo que carece de atribuciones para supervisar o regular cualquier otro servicio que proporcione Savenest.]]></text>
 			</staticText>
 		</band>
-		<band height="221">
+		<band height="365">
 			<frame>
-				<reportElement x="0" y="16" width="752" height="205" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
+				<reportElement x="0" y="19" width="752" height="309" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
 				<frame>
-					<reportElement x="0" y="0" width="370" height="151" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
+					<reportElement x="0" y="0" width="370" height="175" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
 					<staticText>
 						<reportElement mode="Opaque" x="0" y="0" width="370" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="5f8c1e35-dd33-406a-94e7-dceff897de7d"/>
 						<box>
@@ -1378,7 +1386,7 @@
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="382" y="0" width="370" height="151" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
+					<reportElement x="382" y="0" width="370" height="199" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
 					<staticText>
 						<reportElement mode="Opaque" x="0" y="0" width="370" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="ea821290-2af3-4a43-81bc-6738d9efb24a"/>
 						<box>
@@ -1484,6 +1492,41 @@
 						</textElement>
 						<textFieldExpression><![CDATA["$"+$F{admin}]]></textFieldExpression>
 					</textField>
+					<staticText>
+						<reportElement x="0" y="150" width="250" height="30" uuid="5a00af22-7599-4afb-937f-a570fbe7ff03"/>
+						<box>
+							<bottomPen lineWidth="1.0"/>
+						</box>
+						<textElement verticalAlignment="Middle">
+							<font size="9" isBold="true"/>
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<text><![CDATA[Monto total de comisiones, gastos e impuestos (IVA e ISR) del periodo]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="250" y="150" width="120" height="30" uuid="05132318-f3bf-43cd-9ae1-4039269044c8"/>
+						<box>
+							<bottomPen lineWidth="1.0"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<textFieldExpression><![CDATA["$"+$F{totalComisiones}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="180" width="370" height="30" uuid="60ec33b1-c1c6-4297-9616-429effd2f867"/>
+						<box>
+							<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font size="8"/>
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<textFieldExpression><![CDATA["El monto total de comisiones, gastos, e impuestos (IVA e ISR) del periodo representa el " + $F{totalComisionesSobreTotal} +"% de su cartera de inversión al cierre del mes."]]></textFieldExpression>
+					</textField>
 				</frame>
 				<textField>
 					<reportElement x="250" y="155" width="120" height="20" uuid="f8ec245e-3f5b-4f4b-898c-b1f89d983c9e"/>
@@ -1513,7 +1556,7 @@
 					<text><![CDATA[Fecha de depósito inicial]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="0" y="185" width="751" height="20" uuid="6f59cb3d-6317-4438-9206-6b860d2828db"/>
+					<reportElement x="0" y="289" width="751" height="20" uuid="6f59cb3d-6317-4438-9206-6b860d2828db"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1526,22 +1569,36 @@
 					<textFieldExpression><![CDATA["El presente informe de operaciones comprende los movimientos del " +$F{start} +" al "+ $F{end}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="381" y="156" width="371" height="20" forecolor="#030303" uuid="9073bbf7-1d60-48e4-8c3b-26d7f828ca8b"/>
+					<reportElement x="382" y="211" width="370" height="20" forecolor="#030303" uuid="9073bbf7-1d60-48e4-8c3b-26d7f828ca8b"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
-					<textElement verticalAlignment="Top">
+					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="false"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
 					<text><![CDATA[*Cobrado y/o Retenido por la Institución financiera no por SaveNest]]></text>
 				</staticText>
+				<staticText>
+					<reportElement x="382" y="231" width="366" height="29" uuid="489bc9c5-f1e5-43de-a10d-fc0fddfb90df"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[Para mayor información sobre el cálculo de comisiones y gastos por servicios consulta nuestra Guía de servicios de inversión en www.savenest.mx/servicios o a SaveNest directamente.]]></text>
+				</staticText>
 			</frame>
 		</band>
-		<band height="1">
+		<band height="4">
 			<break>
 				<reportElement x="0" y="0" width="750" height="1" uuid="01e28069-3b50-4b8a-a537-2dc43c15072a"/>
 			</break>
