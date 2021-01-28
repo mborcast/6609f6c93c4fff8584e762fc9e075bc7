@@ -120,6 +120,33 @@
 			<bottomPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
+	<style name="Table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
 	<subDataset name="Shares" uuid="6be1d653-cfe4-48fc-a911-512bda68ff72">
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="manu.xml"/>
 		<queryString language="JSON">
@@ -312,6 +339,254 @@
 			<fieldDescription><![CDATA[weight]]></fieldDescription>
 		</field>
 	</subDataset>
+	<subDataset name="feesAdministracion" uuid="bc03ac61-9108-4f56-b63f-8cd547b4db86">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+		<queryString language="json">
+			<![CDATA[data.fees.admin]]>
+		</queryString>
+		<field name="fecha" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="fecha"/>
+			<fieldDescription><![CDATA[fecha]]></fieldDescription>
+		</field>
+		<field name="contrato" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="contrato"/>
+			<fieldDescription><![CDATA[contrato]]></fieldDescription>
+		</field>
+		<field name="descripcion" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="descripcion"/>
+			<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+		</field>
+		<field name="emisora" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="emisora"/>
+			<fieldDescription><![CDATA[emisora]]></fieldDescription>
+		</field>
+		<field name="serie" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="serie"/>
+			<fieldDescription><![CDATA[serie]]></fieldDescription>
+		</field>
+		<field name="cantidad" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="cantidad"/>
+			<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+		</field>
+		<field name="precio" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="precio"/>
+			<fieldDescription><![CDATA[precio]]></fieldDescription>
+		</field>
+		<field name="tasa" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="tasa"/>
+			<fieldDescription><![CDATA[tasa]]></fieldDescription>
+		</field>
+		<field name="premio" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="premio"/>
+			<fieldDescription><![CDATA[premio]]></fieldDescription>
+		</field>
+		<field name="intereses" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="intereses"/>
+			<fieldDescription><![CDATA[intereses]]></fieldDescription>
+		</field>
+		<field name="impuesto" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="impuesto"/>
+			<fieldDescription><![CDATA[impuesto]]></fieldDescription>
+		</field>
+		<field name="iVA" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="iVA"/>
+			<fieldDescription><![CDATA[iVA]]></fieldDescription>
+		</field>
+		<field name="comision" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="comision"/>
+			<fieldDescription><![CDATA[comision]]></fieldDescription>
+		</field>
+		<field name="neto" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="neto"/>
+			<fieldDescription><![CDATA[neto]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="feesServicio" uuid="f7fbc9e5-415c-4909-a449-cc44d81f39a2">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+		<queryString language="json">
+			<![CDATA[data.fees.service]]>
+		</queryString>
+		<field name="fecha" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="fecha"/>
+			<fieldDescription><![CDATA[fecha]]></fieldDescription>
+		</field>
+		<field name="contrato" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="contrato"/>
+			<fieldDescription><![CDATA[contrato]]></fieldDescription>
+		</field>
+		<field name="descripcion" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="descripcion"/>
+			<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+		</field>
+		<field name="emisora" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="emisora"/>
+			<fieldDescription><![CDATA[emisora]]></fieldDescription>
+		</field>
+		<field name="serie" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="serie"/>
+			<fieldDescription><![CDATA[serie]]></fieldDescription>
+		</field>
+		<field name="cantidad" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="cantidad"/>
+			<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+		</field>
+		<field name="precio" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="precio"/>
+			<fieldDescription><![CDATA[precio]]></fieldDescription>
+		</field>
+		<field name="tasa" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="tasa"/>
+			<fieldDescription><![CDATA[tasa]]></fieldDescription>
+		</field>
+		<field name="premio" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="premio"/>
+			<fieldDescription><![CDATA[premio]]></fieldDescription>
+		</field>
+		<field name="intereses" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="intereses"/>
+			<fieldDescription><![CDATA[intereses]]></fieldDescription>
+		</field>
+		<field name="impuesto" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="impuesto"/>
+			<fieldDescription><![CDATA[impuesto]]></fieldDescription>
+		</field>
+		<field name="iVA" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="iVA"/>
+			<fieldDescription><![CDATA[iVA]]></fieldDescription>
+		</field>
+		<field name="comision" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="comision"/>
+			<fieldDescription><![CDATA[comision]]></fieldDescription>
+		</field>
+		<field name="neto" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="neto"/>
+			<fieldDescription><![CDATA[neto]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="feesIntermediacion" uuid="db43c2ec-e474-41b1-a113-07ffeb106259">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+		<queryString language="json">
+			<![CDATA[data.fees.intermediacion]]>
+		</queryString>
+		<field name="fecha" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="fecha"/>
+			<fieldDescription><![CDATA[fecha]]></fieldDescription>
+		</field>
+		<field name="contrato" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="contrato"/>
+			<fieldDescription><![CDATA[contrato]]></fieldDescription>
+		</field>
+		<field name="descripcion" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="descripcion"/>
+			<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+		</field>
+		<field name="emisora" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="emisora"/>
+			<fieldDescription><![CDATA[emisora]]></fieldDescription>
+		</field>
+		<field name="serie" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="serie"/>
+			<fieldDescription><![CDATA[serie]]></fieldDescription>
+		</field>
+		<field name="cantidad" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="cantidad"/>
+			<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+		</field>
+		<field name="precio" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="precio"/>
+			<fieldDescription><![CDATA[precio]]></fieldDescription>
+		</field>
+		<field name="tasa" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="tasa"/>
+			<fieldDescription><![CDATA[tasa]]></fieldDescription>
+		</field>
+		<field name="premio" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="premio"/>
+			<fieldDescription><![CDATA[premio]]></fieldDescription>
+		</field>
+		<field name="intereses" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="intereses"/>
+			<fieldDescription><![CDATA[intereses]]></fieldDescription>
+		</field>
+		<field name="impuesto" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="impuesto"/>
+			<fieldDescription><![CDATA[impuesto]]></fieldDescription>
+		</field>
+		<field name="iVA" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="iVA"/>
+			<fieldDescription><![CDATA[iVA]]></fieldDescription>
+		</field>
+		<field name="comision" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="comision"/>
+			<fieldDescription><![CDATA[comision]]></fieldDescription>
+		</field>
+		<field name="neto" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="neto"/>
+			<fieldDescription><![CDATA[neto]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="feesTaxes" uuid="c5a3d3fb-98db-46b3-9d02-fd6ad812d087">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+		<queryString language="json">
+			<![CDATA[data.fees.taxes]]>
+		</queryString>
+		<field name="fecha" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="fecha"/>
+			<fieldDescription><![CDATA[fecha]]></fieldDescription>
+		</field>
+		<field name="contrato" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="contrato"/>
+			<fieldDescription><![CDATA[contrato]]></fieldDescription>
+		</field>
+		<field name="descripcion" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="descripcion"/>
+			<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+		</field>
+		<field name="emisora" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="emisora"/>
+			<fieldDescription><![CDATA[emisora]]></fieldDescription>
+		</field>
+		<field name="serie" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="serie"/>
+			<fieldDescription><![CDATA[serie]]></fieldDescription>
+		</field>
+		<field name="cantidad" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="cantidad"/>
+			<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+		</field>
+		<field name="precio" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="precio"/>
+			<fieldDescription><![CDATA[precio]]></fieldDescription>
+		</field>
+		<field name="tasa" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="tasa"/>
+			<fieldDescription><![CDATA[tasa]]></fieldDescription>
+		</field>
+		<field name="premio" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="premio"/>
+			<fieldDescription><![CDATA[premio]]></fieldDescription>
+		</field>
+		<field name="intereses" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="intereses"/>
+			<fieldDescription><![CDATA[intereses]]></fieldDescription>
+		</field>
+		<field name="impuesto" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="impuesto"/>
+			<fieldDescription><![CDATA[impuesto]]></fieldDescription>
+		</field>
+		<field name="iVA" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="iVA"/>
+			<fieldDescription><![CDATA[iVA]]></fieldDescription>
+		</field>
+		<field name="comision" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.json.field.expression" value="comision"/>
+			<fieldDescription><![CDATA[comision]]></fieldDescription>
+		</field>
+		<field name="neto" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="neto"/>
+			<fieldDescription><![CDATA[neto]]></fieldDescription>
+		</field>
+	</subDataset>
 	<queryString language="JSON">
 		<![CDATA[]]>
 	</queryString>
@@ -446,6 +721,14 @@
 	<field name="totalComisionesSobreTotal" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.concepts.totalComisionesSobreTotal"/>
 		<fieldDescription><![CDATA[data.concepts.totalComisionesSobreTotal]]></fieldDescription>
+	</field>
+	<field name="totalImpuestos" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.concepts.totalImpuestos"/>
+		<fieldDescription><![CDATA[data.concepts.totalImpuestos]]></fieldDescription>
+	</field>
+	<field name="totalImpuestosSobreTotal" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.concepts.totalImpuestosSobreTotal"/>
+		<fieldDescription><![CDATA[data.concepts.totalImpuestosSobreTotal]]></fieldDescription>
 	</field>
 	<pageHeader>
 		<band height="72" splitType="Stretch">
@@ -1236,15 +1519,18 @@
 				</textField>
 			</frame>
 		</band>
-		<band height="80">
+		<band height="113">
 			<staticText>
 				<reportElement x="0" y="5" width="751" height="75" uuid="c97a84c7-f43f-41e6-9d24-24d175c050bc"/>
 				<text><![CDATA[Savenest de México, S.A. de C.V. Asesor en Inversiones Independiente con número de folio de inscripción en el registro de Asesores en Inversiones asignado por la Comisión Nacional Bancaria y de Valores 30120-001-(14828)-31/10/2018 hace de su conocimiento que la Comisión Nacional Bancaria y de Valores supervisa exclusivamente la prestación de servicios de administración de cartera de valores cuando se tomen decisiones de inversión a nombre y por cuenta de terceros, así como los servicios consistentes en otorgar asesoría de inversión en Valores, análisis y emisión de recomendaciones de inversión de manera individualizada, por lo que carece de atribuciones para supervisar o regular cualquier otro servicio que proporcione Savenest.]]></text>
 			</staticText>
+			<break>
+				<reportElement x="0" y="96" width="750" height="1" uuid="b260256e-4f91-40dc-87f0-8e407edb89db"/>
+			</break>
 		</band>
-		<band height="365">
+		<band height="369">
 			<frame>
-				<reportElement x="0" y="19" width="752" height="309" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
+				<reportElement x="0" y="30" width="752" height="330" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
 				<frame>
 					<reportElement x="0" y="0" width="370" height="175" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
 					<staticText>
@@ -1259,7 +1545,7 @@
 						<text><![CDATA[]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="0" y="30" width="170" height="30" uuid="556d39cc-cca3-490f-a69a-d82c5c69b6a0"/>
+						<reportElement x="0" y="30" width="270" height="30" uuid="556d39cc-cca3-490f-a69a-d82c5c69b6a0"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1269,29 +1555,8 @@
 						</textElement>
 						<text><![CDATA[Tasa de rendimiento bruto ]]></text>
 					</staticText>
-					<textField>
-						<reportElement x="270" y="30" width="100" height="30" uuid="78ef2bac-6463-4168-9817-5363c709f5b1"/>
-						<box>
-							<bottomPen lineWidth="1.0"/>
-						</box>
-						<textElement textAlignment="Center" verticalAlignment="Middle">
-							<paragraph leftIndent="5"/>
-						</textElement>
-						<textFieldExpression><![CDATA[$F{gross12M}+"%"]]></textFieldExpression>
-					</textField>
 					<staticText>
-						<reportElement x="270" y="0" width="100" height="30" forecolor="#FFFFFF" uuid="06b01dac-4815-48d4-890b-ff759faa7e1d"/>
-						<box>
-							<bottomPen lineWidth="1.0"/>
-						</box>
-						<textElement textAlignment="Center" verticalAlignment="Middle">
-							<font isBold="true"/>
-							<paragraph leftIndent="5"/>
-						</textElement>
-						<text><![CDATA[12 meses]]></text>
-					</staticText>
-					<staticText>
-						<reportElement x="0" y="60" width="170" height="30" uuid="6258e56a-2565-4d7a-bdb1-8f884366a643"/>
+						<reportElement x="0" y="60" width="270" height="30" uuid="6258e56a-2565-4d7a-bdb1-8f884366a643"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1301,16 +1566,6 @@
 						</textElement>
 						<text><![CDATA[Tasa de rendimiento neto ]]></text>
 					</staticText>
-					<textField>
-						<reportElement x="270" y="60" width="100" height="30" uuid="4e6417f7-8434-4115-aeec-6f1683cd8029"/>
-						<box>
-							<bottomPen lineWidth="1.0"/>
-						</box>
-						<textElement textAlignment="Center" verticalAlignment="Middle">
-							<paragraph leftIndent="5"/>
-						</textElement>
-						<textFieldExpression><![CDATA[$F{net12M}+"%"]]></textFieldExpression>
-					</textField>
 					<staticText>
 						<reportElement x="0" y="90" width="370" height="16" uuid="1c117a3b-0a5a-419e-bb56-df7ea12d40df"/>
 						<box>
@@ -1340,7 +1595,7 @@
 						<text><![CDATA[*Rendimiento en pesos]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="170" y="0" width="100" height="30" forecolor="#FFFFFF" uuid="4bee9843-c38c-483d-b19e-2177e9b286fa"/>
+						<reportElement x="270" y="0" width="100" height="30" forecolor="#FFFFFF" uuid="4bee9843-c38c-483d-b19e-2177e9b286fa"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1348,10 +1603,10 @@
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[2020]]></text>
+						<text><![CDATA[2020 (12 meses)]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="170" y="30" width="100" height="30" uuid="84cd51ec-caae-433c-9b58-5b4c5b7bf1ca"/>
+						<reportElement x="270" y="30" width="100" height="30" uuid="84cd51ec-caae-433c-9b58-5b4c5b7bf1ca"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1361,7 +1616,7 @@
 						<textFieldExpression><![CDATA[$F{gross}+"%"]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement x="170" y="60" width="100" height="30" uuid="1ced3b7a-eca3-4cd7-98a2-ed66c2bbb5dc"/>
+						<reportElement x="270" y="60" width="100" height="30" uuid="1ced3b7a-eca3-4cd7-98a2-ed66c2bbb5dc"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1386,13 +1641,13 @@
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="382" y="0" width="370" height="199" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
+					<reportElement x="382" y="0" width="370" height="210" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
 					<staticText>
 						<reportElement mode="Opaque" x="0" y="0" width="370" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="ea821290-2af3-4a43-81bc-6738d9efb24a"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
-						<textElement textAlignment="Center" verticalAlignment="Middle">
+						<textElement textAlignment="Left" verticalAlignment="Middle">
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
@@ -1404,12 +1659,13 @@
 							<bottomPen lineWidth="1.0"/>
 						</box>
 						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
 						<text><![CDATA[Monto]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="0" y="29" width="250" height="30" uuid="50d49841-3e5f-4cdf-b47d-5132e4a3775a"/>
+						<reportElement x="0" y="60" width="250" height="30" uuid="50d49841-3e5f-4cdf-b47d-5132e4a3775a"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1417,10 +1673,10 @@
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[Comisiones y Gastos de Intermediación*]]></text>
+						<text><![CDATA[Comisiones y gastos de Intermediación*]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="250" y="29" width="120" height="30" uuid="0090e19a-2762-4e3a-bd2c-39b5ed9fad12"/>
+						<reportElement x="250" y="60" width="120" height="30" uuid="0090e19a-2762-4e3a-bd2c-39b5ed9fad12"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1430,7 +1686,7 @@
 						<textFieldExpression><![CDATA["$"+$F{intermediacion}]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement x="0" y="60" width="250" height="30" uuid="d7a0561c-83d8-4d29-b533-1b3f6a7180b1"/>
+						<reportElement x="0" y="30" width="250" height="30" uuid="d7a0561c-83d8-4d29-b533-1b3f6a7180b1"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1438,10 +1694,10 @@
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[Comisiones y Gastos por Servicios ]]></text>
+						<text><![CDATA[Comisiones y gastos por Servicios ]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="250" y="60" width="120" height="30" uuid="e960051e-9bce-4ed9-967c-280c1aaaa5db"/>
+						<reportElement x="250" y="30" width="120" height="30" uuid="e960051e-9bce-4ed9-967c-280c1aaaa5db"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1459,10 +1715,10 @@
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[Comisiones y Gastos Administrativos*]]></text>
+						<text><![CDATA[Comisiones y gastos Administrativos*]]></text>
 					</staticText>
 					<staticText>
-						<reportElement x="0" y="121" width="250" height="30" uuid="ccdd9bbd-ada3-4309-a8ed-258233d34cf5"/>
+						<reportElement x="0" y="180" width="250" height="30" uuid="ccdd9bbd-ada3-4309-a8ed-258233d34cf5"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1470,10 +1726,10 @@
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[Impuesto Sobre la Renta Retenido*]]></text>
+						<text><![CDATA[Monto total de impuestos retenidos (ISR)*]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="250" y="121" width="120" height="30" uuid="a0274ca9-07a6-4be9-b1b8-b3e155cfaa85"/>
+						<reportElement x="250" y="180" width="120" height="30" uuid="a0274ca9-07a6-4be9-b1b8-b3e155cfaa85"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1493,18 +1749,18 @@
 						<textFieldExpression><![CDATA["$"+$F{admin}]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement x="0" y="150" width="250" height="30" uuid="5a00af22-7599-4afb-937f-a570fbe7ff03"/>
+						<reportElement x="0" y="120" width="250" height="30" uuid="5a00af22-7599-4afb-937f-a570fbe7ff03"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
 						<textElement verticalAlignment="Middle">
-							<font size="9" isBold="true"/>
+							<font size="10" isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[Monto total de comisiones, gastos e impuestos (IVA e ISR) del periodo]]></text>
+						<text><![CDATA[Monto total de comisiones y gastos]]></text>
 					</staticText>
 					<textField>
-						<reportElement x="250" y="150" width="120" height="30" uuid="05132318-f3bf-43cd-9ae1-4039269044c8"/>
+						<reportElement x="250" y="120" width="120" height="30" uuid="05132318-f3bf-43cd-9ae1-4039269044c8"/>
 						<box>
 							<bottomPen lineWidth="1.0"/>
 						</box>
@@ -1514,7 +1770,7 @@
 						<textFieldExpression><![CDATA["$"+$F{totalComisiones}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement x="0" y="180" width="370" height="30" uuid="60ec33b1-c1c6-4297-9616-429effd2f867"/>
+						<reportElement x="0" y="150" width="370" height="30" uuid="60ec33b1-c1c6-4297-9616-429effd2f867"/>
 						<box>
 							<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 							<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1525,11 +1781,38 @@
 							<font size="8"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<textFieldExpression><![CDATA["El monto total de comisiones, gastos, e impuestos (IVA e ISR) del periodo representa el " + $F{totalComisionesSobreTotal} +"% de su cartera de inversión al cierre del periodo."]]></textFieldExpression>
+						<textFieldExpression><![CDATA["El monto total de comisiones y gastos representa el " + $F{totalComisionesSobreTotal} +"% de su cartera de inversión al cierre del periodo."]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="210" width="370" height="30" uuid="1a952480-15ef-4eb3-984d-4c9f5c8a007e"/>
+						<box>
+							<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font size="8"/>
+							<paragraph leftIndent="5"/>
+						</textElement>
+						<textFieldExpression><![CDATA["El monto total de impuestos retenidos (ISR) representa el " + $F{totalImpuestosSobreTotal} +"% de su cartera de inversión al cierre del periodo."]]></textFieldExpression>
 					</textField>
 				</frame>
 				<textField>
-					<reportElement x="250" y="155" width="120" height="20" uuid="f8ec245e-3f5b-4f4b-898c-b1f89d983c9e"/>
+					<reportElement x="270" y="155" width="100" height="20" uuid="f8ec245e-3f5b-4f4b-898c-b1f89d983c9e"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{firstDeposit}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="155" width="270" height="20" uuid="2f61d30f-38f3-4361-b51a-e2972c44e400"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1537,26 +1820,13 @@
 						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement verticalAlignment="Middle">
-						<paragraph leftIndent="5"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{firstDeposit}]]></textFieldExpression>
-				</textField>
-				<staticText>
-					<reportElement x="0" y="155" width="250" height="20" uuid="2f61d30f-38f3-4361-b51a-e2972c44e400"/>
-					<box>
-						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					</box>
-					<textElement verticalAlignment="Top">
 						<font isBold="true"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
 					<text><![CDATA[Fecha de depósito inicial]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="0" y="289" width="751" height="20" uuid="6f59cb3d-6317-4438-9206-6b860d2828db"/>
+					<reportElement x="-5" y="-24" width="751" height="19" uuid="6f59cb3d-6317-4438-9206-6b860d2828db"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1569,7 +1839,7 @@
 					<textFieldExpression><![CDATA["El presente informe de operaciones comprende los movimientos del " +$F{start} +" al "+ $F{end}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="382" y="211" width="370" height="20" forecolor="#030303" uuid="9073bbf7-1d60-48e4-8c3b-26d7f828ca8b"/>
+					<reportElement x="382" y="240" width="370" height="20" forecolor="#030303" uuid="9073bbf7-1d60-48e4-8c3b-26d7f828ca8b"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1583,7 +1853,7 @@
 					<text><![CDATA[*Cobrado y/o Retenido por la Institución financiera no por SaveNest]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="382" y="231" width="366" height="29" uuid="489bc9c5-f1e5-43de-a10d-fc0fddfb90df"/>
+					<reportElement x="382" y="260" width="366" height="29" uuid="6a9f7c88-9b2e-4f11-8d72-9dda7a9522db"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1594,18 +1864,41 @@
 						<font size="8" isBold="false"/>
 						<paragraph leftIndent="5"/>
 					</textElement>
-					<text><![CDATA[Para mayor información sobre el cálculo de comisiones y gastos por servicios consulta nuestra Guía de servicios de inversión en www.savenest.mx/servicios o a SaveNest directamente.]]></text>
+					<text><![CDATA[La forma para calcular el monto de las comisiones y gastos por servicios lo puedes encontrar en la Guía de Servicios de Inversión en www.savenest.mx/servicios]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="382" y="289" width="370" height="20" forecolor="#030303" uuid="44a88d31-bd7d-44f3-921b-97f6a2e8eb89"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[Todas las comisiones son sujetas de IVA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="382" y="309" width="370" height="20" forecolor="#030303" uuid="a4b03951-cb12-4bca-a687-d3403ed96a42"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="false"/>
+						<paragraph leftIndent="5"/>
+					</textElement>
+					<text><![CDATA[Para mayor información con respecto a las comisiones cobradas, favor de comunicarse con SaveNest.]]></text>
 				</staticText>
 			</frame>
 		</band>
-		<band height="4">
-			<break>
-				<reportElement x="0" y="0" width="750" height="1" uuid="01e28069-3b50-4b8a-a537-2dc43c15072a"/>
-			</break>
-		</band>
-		<band height="83">
+		<band height="91">
 			<componentElement>
-				<reportElement x="0" y="3" width="749" height="80" uuid="e4e89663-27a0-4d93-af7a-cbedd8db59a9">
+				<reportElement x="0" y="0" width="751" height="80" uuid="e4e89663-27a0-4d93-af7a-cbedd8db59a9">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
@@ -1966,7 +2259,7 @@
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="35">
+		<band height="27">
 			<printWhenExpression><![CDATA[$F{unliquidated}.length() != 2]]></printWhenExpression>
 			<break>
 				<reportElement x="0" y="10" width="749" height="1" uuid="29913073-a4ca-437a-9efe-894fc63f7349"/>
@@ -1974,14 +2267,14 @@
 		</band>
 		<band height="92">
 			<componentElement>
-				<reportElement style="Table_TH" x="0" y="32" width="750" height="60" uuid="69319dd9-dc45-419a-93e2-ee42c2aea048">
+				<reportElement style="Table_TH" x="0" y="20" width="750" height="60" uuid="69319dd9-dc45-419a-93e2-ee42c2aea048">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
 					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-					<datasetRun subDataset="Reports" uuid="2dbdac01-2738-4b4e-9dc7-dd4c7bc60d3b">
+					<datasetRun subDataset="Reports" uuid="5913eeac-1fbb-4e05-85d4-d4e546fcaa6a">
 						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data.report")]]></dataSourceExpression>
 					</datasetRun>
 					<jr:column width="54" uuid="d6ecacd7-c998-4f45-9eb8-afa0a23e375b">
@@ -2339,7 +2632,7 @@
 				</jr:table>
 			</componentElement>
 			<textField>
-				<reportElement x="0" y="12" width="751" height="20" uuid="1de8583f-69ab-4821-aa51-c1e1b86ec9c1"/>
+				<reportElement x="0" y="0" width="750" height="20" uuid="1de8583f-69ab-4821-aa51-c1e1b86ec9c1"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
