@@ -1580,11 +1580,11 @@
 				<reportElement x="0" y="113" width="750" height="1" uuid="b260256e-4f91-40dc-87f0-8e407edb89db"/>
 			</break>
 		</band>
-		<band height="451">
+		<band height="392">
 			<frame>
-				<reportElement x="0" y="112" width="752" height="330" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
+				<reportElement x="1" y="12" width="752" height="361" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
 				<frame>
-					<reportElement x="0" y="0" width="370" height="175" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
+					<reportElement x="0" y="25" width="370" height="175" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
 					<staticText>
 						<reportElement mode="Opaque" x="0" y="0" width="370" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="5f8c1e35-dd33-406a-94e7-dceff897de7d"/>
 						<box>
@@ -1693,7 +1693,7 @@
 					</staticText>
 				</frame>
 				<frame>
-					<reportElement x="382" y="0" width="370" height="210" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
+					<reportElement x="382" y="25" width="370" height="210" uuid="7970372b-783f-4cc3-ae34-e74e7885c8c5"/>
 					<staticText>
 						<reportElement mode="Opaque" x="0" y="0" width="370" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="ea821290-2af3-4a43-81bc-6738d9efb24a"/>
 						<box>
@@ -1851,7 +1851,7 @@
 					</textField>
 				</frame>
 				<textField>
-					<reportElement x="270" y="155" width="100" height="20" uuid="f8ec245e-3f5b-4f4b-898c-b1f89d983c9e"/>
+					<reportElement x="270" y="180" width="100" height="20" uuid="f8ec245e-3f5b-4f4b-898c-b1f89d983c9e"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1864,7 +1864,7 @@
 					<textFieldExpression><![CDATA[$F{firstDeposit}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="0" y="155" width="270" height="20" uuid="2f61d30f-38f3-4361-b51a-e2972c44e400"/>
+					<reportElement x="0" y="180" width="270" height="20" uuid="2f61d30f-38f3-4361-b51a-e2972c44e400"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1878,7 +1878,7 @@
 					<text><![CDATA[Fecha de depósito inicial]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="-5" y="-24" width="751" height="19" uuid="6f59cb3d-6317-4438-9206-6b860d2828db"/>
+					<reportElement x="1" y="0" width="751" height="19" uuid="6f59cb3d-6317-4438-9206-6b860d2828db"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1891,7 +1891,7 @@
 					<textFieldExpression><![CDATA["El presente informe de operaciones comprende los movimientos del " +$F{start} +" al "+ $F{end}]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="382" y="240" width="370" height="20" forecolor="#030303" uuid="9073bbf7-1d60-48e4-8c3b-26d7f828ca8b"/>
+					<reportElement x="382" y="265" width="370" height="20" forecolor="#030303" uuid="9073bbf7-1d60-48e4-8c3b-26d7f828ca8b"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1905,7 +1905,7 @@
 					<text><![CDATA[*Cobrado y/o Retenido por la Institución financiera no por SaveNest]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="382" y="260" width="366" height="29" uuid="6a9f7c88-9b2e-4f11-8d72-9dda7a9522db"/>
+					<reportElement x="382" y="285" width="366" height="29" uuid="6a9f7c88-9b2e-4f11-8d72-9dda7a9522db"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1919,7 +1919,7 @@
 					<text><![CDATA[La forma para calcular el monto de las comisiones y gastos por servicios lo puedes encontrar en la Guía de Servicios de Inversión en www.savenest.mx/servicios]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="382" y="289" width="370" height="20" forecolor="#030303" uuid="44a88d31-bd7d-44f3-921b-97f6a2e8eb89"/>
+					<reportElement x="382" y="314" width="370" height="20" forecolor="#030303" uuid="44a88d31-bd7d-44f3-921b-97f6a2e8eb89"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1933,7 +1933,7 @@
 					<text><![CDATA[Todas las comisiones son sujetas de IVA]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="382" y="309" width="370" height="20" forecolor="#030303" uuid="a4b03951-cb12-4bca-a687-d3403ed96a42"/>
+					<reportElement x="382" y="334" width="370" height="20" forecolor="#030303" uuid="a4b03951-cb12-4bca-a687-d3403ed96a42"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
