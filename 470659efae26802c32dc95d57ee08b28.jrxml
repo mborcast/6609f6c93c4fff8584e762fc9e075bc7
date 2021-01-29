@@ -1580,9 +1580,9 @@
 				<reportElement x="0" y="113" width="750" height="1" uuid="b260256e-4f91-40dc-87f0-8e407edb89db"/>
 			</break>
 		</band>
-		<band height="420">
+		<band height="451">
 			<frame>
-				<reportElement x="0" y="88" width="752" height="330" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
+				<reportElement x="0" y="112" width="752" height="330" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
 				<frame>
 					<reportElement x="0" y="0" width="370" height="175" uuid="8b311691-39e4-4d43-aef3-a52824b5a546"/>
 					<staticText>
