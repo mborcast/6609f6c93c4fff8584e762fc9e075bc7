@@ -739,7 +739,7 @@
 		<fieldDescription><![CDATA[data.balance.moneyMarketInvestment.weight]]></fieldDescription>
 	</field>
 	<pageHeader>
-		<band height="72" splitType="Stretch">
+		<band height="80" splitType="Stretch">
 			<frame>
 				<reportElement x="0" y="0" width="752" height="64" uuid="5ebb626a-7712-4216-b31d-158f27c61c6d"/>
 				<box>
@@ -1105,7 +1105,7 @@
 				<text><![CDATA[Informe de operaciones]]></text>
 			</staticText>
 		</band>
-		<band height="70">
+		<band height="69">
 			<componentElement>
 				<reportElement x="0" y="1" width="752" height="65" uuid="fc822e87-76df-4f9b-8599-5cf76f0795e3">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
@@ -1378,11 +1378,11 @@
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="141">
+		<band height="138">
 			<frame>
-				<reportElement x="0" y="7" width="751" height="90" uuid="b1a14b34-c98a-426a-83db-108ef402e355"/>
+				<reportElement x="0" y="3" width="751" height="90" uuid="b1a14b34-c98a-426a-83db-108ef402e355"/>
 				<textField>
-					<reportElement x="582" y="0" width="76" height="30" uuid="f3150c23-a21a-4f85-afcf-a085062085a9"/>
+					<reportElement x="582" y="4" width="76" height="30" uuid="f3150c23-a21a-4f85-afcf-a085062085a9"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1393,7 +1393,7 @@
 					<textFieldExpression><![CDATA[$F{CashValue}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="658" y="0" width="93" height="30" uuid="ab84297f-8ffc-42e7-9cfb-e277b7c67a38"/>
+					<reportElement x="658" y="4" width="93" height="30" uuid="ab84297f-8ffc-42e7-9cfb-e277b7c67a38"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1404,7 +1404,7 @@
 					<textFieldExpression><![CDATA[$F{CashWeight}+"%"]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="0" y="0" width="564" height="30" uuid="0a324f48-c2ba-4e4b-9fd1-336790d1b25e"/>
+					<reportElement x="0" y="4" width="564" height="30" uuid="0a324f48-c2ba-4e4b-9fd1-336790d1b25e"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1415,7 +1415,7 @@
 					<text><![CDATA[Efectivo]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="0" y="63" width="564" height="30" uuid="ecec3357-bc14-43e6-89a4-5961ad198b56"/>
+					<reportElement x="0" y="67" width="564" height="30" uuid="ecec3357-bc14-43e6-89a4-5961ad198b56"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1426,7 +1426,7 @@
 					<text><![CDATA[Operaciones pendientes por liquidar]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="582" y="63" width="76" height="30" uuid="ec6d01c4-0cf7-4f01-a81f-556764271ad0"/>
+					<reportElement x="582" y="67" width="76" height="30" uuid="ec6d01c4-0cf7-4f01-a81f-556764271ad0"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1437,7 +1437,7 @@
 					<textFieldExpression><![CDATA[$F{unliquidatedValue}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="658" y="63" width="93" height="30" uuid="103ce86a-7f24-4322-a9f7-d4a78e6a5175"/>
+					<reportElement x="658" y="67" width="93" height="30" uuid="103ce86a-7f24-4322-a9f7-d4a78e6a5175"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1448,7 +1448,7 @@
 					<textFieldExpression><![CDATA[$F{unliquidatedWeight}+"%"]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement mode="Opaque" x="0" y="93" width="564" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="29f1ad5d-6f29-4df8-bbad-c740841e635d"/>
+					<reportElement mode="Opaque" x="0" y="97" width="564" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="29f1ad5d-6f29-4df8-bbad-c740841e635d"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1462,7 +1462,7 @@
 					<text><![CDATA[Total ]]></text>
 				</staticText>
 				<textField>
-					<reportElement mode="Opaque" x="582" y="93" width="76" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="05140c4c-bca5-4741-ab42-fa2accda9a8b"/>
+					<reportElement mode="Opaque" x="582" y="97" width="76" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="05140c4c-bca5-4741-ab42-fa2accda9a8b"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1476,7 +1476,7 @@
 					<textFieldExpression><![CDATA[$F{totalValue}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="658" y="93" width="93" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="c841153a-da3d-4505-b167-6b1a7686fddc"/>
+					<reportElement mode="Opaque" x="658" y="97" width="93" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="c841153a-da3d-4505-b167-6b1a7686fddc"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1490,7 +1490,7 @@
 					<textFieldExpression><![CDATA[""]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="564" y="0" width="18" height="30" uuid="df2740e9-3673-4ee8-89e8-79bcbb39d892"/>
+					<reportElement x="564" y="4" width="18" height="30" uuid="df2740e9-3673-4ee8-89e8-79bcbb39d892"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1501,7 +1501,7 @@
 					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement mode="Opaque" x="564" y="93" width="18" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="2c09a7d5-acbe-4cb4-9be2-33684661cb70"/>
+					<reportElement mode="Opaque" x="564" y="97" width="18" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="2c09a7d5-acbe-4cb4-9be2-33684661cb70"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -1515,7 +1515,7 @@
 					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
 				</textField>
 				<staticText>
-					<reportElement x="0" y="31" width="564" height="30" uuid="4da312c2-1225-4a81-a53d-4f68002e6062"/>
+					<reportElement x="0" y="35" width="564" height="30" uuid="4da312c2-1225-4a81-a53d-4f68002e6062"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1526,7 +1526,7 @@
 					<text><![CDATA[Reporto]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="582" y="31" width="76" height="30" uuid="c1ad44fe-144c-4dfa-b577-84c060fe64da"/>
+					<reportElement x="582" y="35" width="76" height="30" uuid="c1ad44fe-144c-4dfa-b577-84c060fe64da"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1537,7 +1537,7 @@
 					<textFieldExpression><![CDATA[$F{moneyMarketInvestmentvalue}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="658" y="31" width="93" height="30" uuid="669d7c12-d173-4b82-ad72-1f775b9f0eb0"/>
+					<reportElement x="658" y="35" width="93" height="30" uuid="669d7c12-d173-4b82-ad72-1f775b9f0eb0"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1548,7 +1548,7 @@
 					<textFieldExpression><![CDATA[$F{moneyMarketInvestmentweight}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="564" y="31" width="18" height="30" uuid="d4ccb5c9-3b43-47fb-bade-68c983b20522"/>
+					<reportElement x="564" y="35" width="18" height="30" uuid="d4ccb5c9-3b43-47fb-bade-68c983b20522"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1559,7 +1559,7 @@
 					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="564" y="63" width="18" height="30" uuid="d782d828-1b62-4539-9fc2-9c8cc78b0d0a"/>
+					<reportElement x="564" y="67" width="18" height="30" uuid="d782d828-1b62-4539-9fc2-9c8cc78b0d0a"/>
 					<box>
 						<bottomPen lineWidth="1.0"/>
 					</box>
@@ -1571,16 +1571,16 @@
 				</textField>
 			</frame>
 		</band>
-		<band height="112">
+		<band height="129">
 			<staticText>
-				<reportElement x="0" y="5" width="751" height="75" uuid="c97a84c7-f43f-41e6-9d24-24d175c050bc"/>
+				<reportElement x="0" y="12" width="751" height="75" uuid="c97a84c7-f43f-41e6-9d24-24d175c050bc"/>
 				<text><![CDATA[Savenest de México, S.A. de C.V. Asesor en Inversiones Independiente con número de folio de inscripción en el registro de Asesores en Inversiones asignado por la Comisión Nacional Bancaria y de Valores 30120-001-(14828)-31/10/2018 hace de su conocimiento que la Comisión Nacional Bancaria y de Valores supervisa exclusivamente la prestación de servicios de administración de cartera de valores cuando se tomen decisiones de inversión a nombre y por cuenta de terceros, así como los servicios consistentes en otorgar asesoría de inversión en Valores, análisis y emisión de recomendaciones de inversión de manera individualizada, por lo que carece de atribuciones para supervisar o regular cualquier otro servicio que proporcione Savenest.]]></text>
 			</staticText>
 			<break>
-				<reportElement x="0" y="96" width="750" height="1" uuid="b260256e-4f91-40dc-87f0-8e407edb89db"/>
+				<reportElement x="0" y="113" width="750" height="1" uuid="b260256e-4f91-40dc-87f0-8e407edb89db"/>
 			</break>
 		</band>
-		<band height="383">
+		<band height="396">
 			<frame>
 				<reportElement x="0" y="42" width="752" height="330" uuid="694d894d-4c57-423b-ac02-3831f84ee611"/>
 				<frame>
@@ -1948,9 +1948,9 @@
 				</staticText>
 			</frame>
 		</band>
-		<band height="91">
+		<band height="111">
 			<componentElement>
-				<reportElement x="0" y="0" width="751" height="80" uuid="e4e89663-27a0-4d93-af7a-cbedd8db59a9">
+				<reportElement x="0" y="13" width="751" height="80" uuid="e4e89663-27a0-4d93-af7a-cbedd8db59a9">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
@@ -2311,10 +2311,10 @@
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="27">
+		<band height="50">
 			<printWhenExpression><![CDATA[$F{unliquidated}.length() != 2]]></printWhenExpression>
 			<break>
-				<reportElement x="0" y="10" width="749" height="1" uuid="29913073-a4ca-437a-9efe-894fc63f7349"/>
+				<reportElement x="0" y="26" width="748" height="1" uuid="29913073-a4ca-437a-9efe-894fc63f7349"/>
 			</break>
 		</band>
 		<band height="122">
