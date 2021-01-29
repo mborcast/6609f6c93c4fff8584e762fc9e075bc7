@@ -1526,6 +1526,9 @@
 					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
 				</textField>
 			</frame>
+			<break>
+				<reportElement x="0" y="110" width="740" height="1" uuid="0cb8def0-883a-465f-a325-0e44c661ef87"/>
+			</break>
 		</band>
 		<band height="129">
 			<staticText>
