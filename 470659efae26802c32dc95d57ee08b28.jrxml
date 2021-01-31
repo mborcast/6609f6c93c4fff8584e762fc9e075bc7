@@ -14,7 +14,7 @@
 	<style name="Style1"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
 		<box>
-			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.0" lineColor="#000000"/>
 			<bottomPen lineWidth="0.5" lineColor="rgba(0, 0, 0, 0.0)"/>
 		</box>
 	</style>
@@ -898,7 +898,7 @@
 				<text><![CDATA[Informe de operaciones]]></text>
 			</staticText>
 		</band>
-		<band height="113">
+		<band height="70">
 			<componentElement>
 				<reportElement x="1" y="5" width="752" height="65" isPrintWhenDetailOverflows="true" uuid="b840a476-fc23-40a0-8f27-bd226ff67b27">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
@@ -1107,7 +1107,53 @@
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="89">
+		<band height="30">
+			<textField>
+				<reportElement x="471" y="0" width="40" height="30" uuid="d782d828-1b62-4539-9fc2-9c8cc78b0d0a"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA["$"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="471" height="30" uuid="ecec3357-bc14-43e6-89a4-5961ad198b56"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Total de valores]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="511" y="0" width="148" height="30" uuid="ec6d01c4-0cf7-4f01-a81f-556764271ad0"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{securityMarketInvestmentValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="659" y="0" width="94" height="30" uuid="103ce86a-7f24-4322-a9f7-d4a78e6a5175"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{securityMarketInvestmentWeight}+"%"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="77">
 			<componentElement>
 				<reportElement style="Table_TH" x="1" y="12" width="752" height="65" uuid="fc822e87-76df-4f9b-8599-5cf76f0795e3">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
@@ -1380,12 +1426,7 @@
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="50">
-			<break>
-				<reportElement x="0" y="18" width="750" height="1" uuid="c7097403-e654-4fc9-b00a-bd06b6f4d412"/>
-			</break>
-		</band>
-		<band height="110">
+		<band height="102">
 			<frame>
 				<reportElement x="1" y="9" width="751" height="93" uuid="b1a14b34-c98a-426a-83db-108ef402e355"/>
 				<textField>
@@ -1421,39 +1462,6 @@
 					</textElement>
 					<text><![CDATA[Efectivo]]></text>
 				</staticText>
-				<staticText>
-					<reportElement x="1" y="-190" width="468" height="30" uuid="ecec3357-bc14-43e6-89a4-5961ad198b56"/>
-					<box>
-						<bottomPen lineWidth="1.0"/>
-					</box>
-					<textElement verticalAlignment="Middle">
-						<font size="7"/>
-						<paragraph leftIndent="5"/>
-					</textElement>
-					<text><![CDATA[Total de valores]]></text>
-				</staticText>
-				<textField>
-					<reportElement x="510" y="-190" width="147" height="30" uuid="ec6d01c4-0cf7-4f01-a81f-556764271ad0"/>
-					<box>
-						<bottomPen lineWidth="1.0"/>
-					</box>
-					<textElement textAlignment="Right" verticalAlignment="Middle">
-						<font size="7"/>
-						<paragraph leftIndent="5"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{securityMarketInvestmentValue}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="657" y="-190" width="94" height="30" uuid="103ce86a-7f24-4322-a9f7-d4a78e6a5175"/>
-					<box>
-						<bottomPen lineWidth="1.0"/>
-					</box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font size="7"/>
-						<paragraph leftIndent="5"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{securityMarketInvestmentWeight}]]></textFieldExpression>
-				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="0" y="63" width="564" height="30" forecolor="#FFFFFF" backcolor="#016390" uuid="29f1ad5d-6f29-4df8-bbad-c740841e635d"/>
 					<box>
@@ -1514,17 +1522,6 @@
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					</box>
-					<textElement verticalAlignment="Middle">
-						<font size="7"/>
-						<paragraph leftIndent="5"/>
-					</textElement>
-					<textFieldExpression><![CDATA["$"]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="470" y="-190" width="40" height="30" uuid="d782d828-1b62-4539-9fc2-9c8cc78b0d0a"/>
-					<box>
-						<bottomPen lineWidth="1.0"/>
 					</box>
 					<textElement verticalAlignment="Middle">
 						<font size="7"/>
